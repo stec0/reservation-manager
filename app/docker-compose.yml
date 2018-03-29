@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  rm:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.app
+    ports:
+      - "80:80"
+    links:
+      - db
+    tty: true
+
+  db:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.db
+    restart: "always"

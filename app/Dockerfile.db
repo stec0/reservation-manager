@@ -1,0 +1,5 @@
+FROM library/postgres:latest
+ENV POSTGRES_PASSWORD consensys
+ENV POSTGRES_USER consensys
+ENV POSTGRES_DB reservationmanager
+ADD ./db/createDB.sql /docker-entrypoint-initdb.d/
