@@ -4,7 +4,7 @@ A decentralized booking system that allow two concurrent firms to trustlessly sh
 
 ## Getting Started
 
-To run the service, clone the repo and run the following commands.
+To run the service, first install docker and docker-compose, then clone the repo and run the following commands.
 
 ```
 cd app/
